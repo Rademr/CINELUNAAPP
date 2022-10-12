@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">cinelunaapp</string>
+    <string name="movies_list_title">Lista de Peliculas</string>
 </resources>

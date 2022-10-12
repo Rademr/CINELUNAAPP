@@ -6,11 +6,12 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import pe.edu.ulima.cinelunaapp.presentation.screens.ScreenMain
+import pe.edu.ulima.cinelunaapp.presentation.components.NavigationGraph
+import pe.edu.ulima.cinelunaapp.presentation.screens.LoginPage
+import pe.edu.ulima.cinelunaapp.presentation.screens.NavigationScreen
 import pe.edu.ulima.cinelunaapp.ui.theme.CinelunaappTheme
 
 class MainActivity : ComponentActivity() {
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    ScreenMain()
+                    NavigationScreen()
                 }
             }
         }
@@ -36,6 +37,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun DefaultPreview() {
     CinelunaappTheme {
-        ScreenMain()
+        NavigationScreen()
     }
 }
